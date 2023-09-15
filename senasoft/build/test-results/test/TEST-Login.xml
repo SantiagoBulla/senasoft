@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Login" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-15T21:25:34" hostname="LAPTOP-DASABUPE" time="15.058">
+<testsuite name="Login" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-15T22:29:24" hostname="LAPTOP-DASABUPE" time="13.912">
   <properties/>
-  <testcase name="Successful Login" classname="Login" time="15.058">
+  <testcase name="Successful Login" classname="Login" time="13.912">
     <failure message="io.cucumber.core.exception.CucumberException: Step [he enter the correct credentials] is defined with 0 parameters at 'stepsdefinitions.LoginStepDefinition.heEnterTheCorrectCredentials()'.&#10;However, the gherkin step has 1 arguments:&#10; * Table:&#10;      | Document | 1111111111     |&#10;      | Password | contraseña1234 |&#10;&#10;Step text: he enter the correct credentials" type="io.cucumber.core.exception.CucumberException">io.cucumber.core.exception.CucumberException: Step [he enter the correct credentials] is defined with 0 parameters at 'stepsdefinitions.LoginStepDefinition.heEnterTheCorrectCredentials()'.
 However, the gherkin step has 1 arguments:
  * Table:
@@ -78,11 +78,11 @@ Successful Login(login;successful-login)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\57305\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 10473
+Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 47228
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sep. 15, 2023 4:25:41 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+sep. 15, 2023 5:29:31 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] ERROR  - 
   _____   ___   ___   _____     ___   ___   ___    ___    ___ 
