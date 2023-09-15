@@ -11,6 +11,8 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
+import java.util.Map;
+
 public class LoginStepDefinition {
 
     @Managed
@@ -31,7 +33,7 @@ public class LoginStepDefinition {
         OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.bon-bonite.com/"));
     }
     @When("he enter the correct credentials")
-    public void heEnterTheCorrectCredentials() {
+    public void heEnterTheCorrectCredentials(Map<String, String> userData) {
         // Write code here that turns the phrase above into concrete actions
         // For automatic transformation, change DataTable to one of
         // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
