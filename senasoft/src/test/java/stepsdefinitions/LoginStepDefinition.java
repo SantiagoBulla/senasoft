@@ -1,9 +1,11 @@
 package stepsdefinitions;
 
 import io.cucumber.java.Before;
+import io.cucumber.java.DataTableType;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import models.LoginModel;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Open;
@@ -14,6 +16,8 @@ import org.openqa.selenium.WebDriver;
 import taks.LoginTask;
 import userinterfaces.MenuComponent;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 public class LoginStepDefinition {
@@ -31,6 +35,14 @@ public class LoginStepDefinition {
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisBrowser));
     }
 
+    //convertir la data table en un objeto de tipo LoginModel
+    @DataTableType
+    public LoginModel userData(Map<String, String> value) {//metodo de configuracion para trabajar con data tables
+        return new LoginModel(//constructor del modelo
+                value.get("document"),
+                value.get("password"));
+    }
+
     @Given("that the user is the login page")
     public void thatTheUserIsTheLoginPage() {
         OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.bon-bonite.com/"));
@@ -38,14 +50,16 @@ public class LoginStepDefinition {
     }
 
     @When("he enter the correct credentials")
-    public void heEnterTheCorrectCredentials(Map<String, String> userData) {
-        // Write code here that turns the phrase above into concrete actions
-        // For automatic transformation, change DataTable to one of
-        // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-        // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-        // Double, Byte, Short, Long, BigInteger or BigDecimal.
-        //
-        // For other transformations you can register a DataTableType.
+    public void heEnterTheCorrectCredentials(List<LoginModel> credentialsList) {
+        LoginModel credentials;
+        credentials = credentialsList.get(0);//tomar los datos de la data table como valores para la validacion
+        OnStage.theActorInTheSpotlight().attemptsTo(LoginTask.validateCredentials(credentials));//llamar metodo task
+        try {
+            Thread.sleep(1500);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        hisBrowser.quit();//matar el driver
     }
 
     @Then("he should be redirected to the main page")

@@ -1,20 +1,36 @@
 package taks;
 
+import models.LoginModel;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Scroll;
+import userinterfaces.LoginPage;
 import userinterfaces.MenuComponent;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class LoginTask implements Task {
 
-    public static LoginTask validateCredentials(){
-        return instrumented(LoginTask.class);
+    LoginModel credentials;
+
+    public LoginTask(LoginModel credentials) {
+        this.credentials = credentials;
+    }
+
+    public static LoginTask validateCredentials(LoginModel credentials){
+        return instrumented(LoginTask.class,credentials);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-
+        //acciones de la task
+        actor.attemptsTo(
+                Enter.theValue(credentials.getDocument()).into(LoginPage.TXT_USERNAME),
+                Enter.theValue(credentials.getPassword()).into(LoginPage.TXT_PASSWORD),
+                Scroll.to(LoginPage.TXT_REGISTER_PASSWORD),
+                Click.on(LoginPage.BTN_LOGIN_SUBMIT)
+        );
     }
 }
