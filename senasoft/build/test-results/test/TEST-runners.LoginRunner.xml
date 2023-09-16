@@ -4,7 +4,7 @@
   <system-out><![CDATA[
 1 Scenarios (?[32m1 passed?[0m)
 3 Steps (?[32m3 passed?[0m)
-0m14,117s
+0m14,773s
 
 
 ]]></system-out>
@@ -26,8 +26,8 @@
 -------------------------------------------------------------------------------------
 
 [Test worker] INFO  - Test Suite Started: Login
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@3c9e19de: Generating report for test outcome: Login:Successful Login
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@b77b0a0: Generating report for test outcome: Login:Successful Login
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@bcfe29c: Generating report for test outcome: Login:Successful Login
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@283e1759: Generating report for test outcome: Login:Successful Login
 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/57305/Documents/Automatizacion%20de%20pruebas/senasoft/senasoft/src/test/resources/features/login.feature
 ]]></system-err>
 </testsuite>

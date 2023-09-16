@@ -5,11 +5,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+import taks.LoginTask;
+import userinterfaces.MenuComponent;
 
 import java.util.Map;
 
@@ -19,7 +22,7 @@ public class LoginStepDefinition {
     WebDriver hisBrowser;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         //configurar el scenario
         OnStage.setTheStage(Cast.ofStandardActors());
         //crear el actor
@@ -31,7 +34,9 @@ public class LoginStepDefinition {
     @Given("that the user is the login page")
     public void thatTheUserIsTheLoginPage() {
         OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.bon-bonite.com/"));
+        OnStage.theActorInTheSpotlight().wasAbleTo(Click.on(MenuComponent.ACCOUNT_ICON));
     }
+
     @When("he enter the correct credentials")
     public void heEnterTheCorrectCredentials(Map<String, String> userData) {
         // Write code here that turns the phrase above into concrete actions
@@ -42,6 +47,7 @@ public class LoginStepDefinition {
         //
         // For other transformations you can register a DataTableType.
     }
+
     @Then("he should be redirected to the main page")
     public void heShouldBeRedirectedToTheMainPage() {
 
