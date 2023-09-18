@@ -1,9 +1,7 @@
 package taks;
 
-import interactions.ClickOnComponentElementInteraction;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
-import userinterfaces.MenuComponent;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 

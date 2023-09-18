@@ -1,6 +1,5 @@
 package interactions;
 
-import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.actions.Click;
@@ -8,16 +7,16 @@ import net.serenitybdd.screenplay.targets.Target;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class ClickOnComponentElementInteraction implements Interaction {
+public class ClickOnElementPageInteraction implements Interaction {
 
     private final Target LOCATOR;
 
-    public ClickOnComponentElementInteraction(Target locator) {
+    public ClickOnElementPageInteraction(Target locator) {
         LOCATOR = locator;
     }
 
-    public static ClickOnComponentElementInteraction componentClick(Target LOCATOR){
-        return instrumented(ClickOnComponentElementInteraction.class,LOCATOR);
+    public static ClickOnElementPageInteraction componentClick(Target LOCATOR){
+        return instrumented(ClickOnElementPageInteraction.class,LOCATOR);
     }
 
     @Override
