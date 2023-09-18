@@ -9,7 +9,6 @@ public class LoginInvalid implements Question {
     @Override
     public Object answeredBy(Actor actor) {
         return Enabled.of(LoginPage.TXT_ERROR_LOGIN).viewedBy(actor).resolve();//retorna true si el target esta activo
-
     }
 
     public static LoginInvalid rejectLogin(){
