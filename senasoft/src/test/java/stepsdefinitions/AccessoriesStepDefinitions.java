@@ -41,26 +41,25 @@ public class AccessoriesStepDefinitions{
 
     }
 
-    @When("the user clicks the favorite option")
-    public void theUserClicksTheFavoriteOption() {
-
-    }
 
     @When("the user Clicks on wallet option and Sees the result of their search")
     public void theUserClicksOnWalletOptionAndSeesTheResultOfTheirSearch() {
 
     }
-    @When("Clicks the favorite option and clicks on añadir a la lista de deseos")
-    public void clicksTheFavoriteOptionAndClicksOnAñadirALaListaDeDeseos() {
+
+
+    @And("the user Clicks the favorite option")
+    public void theUserClicksTheFavoriteOption() {
+
+    }
+    @And("the user Clicks on añadir a la lista de deseos")
+    public void theUserClicksOnAñadirALaListaDeDeseos() {
 
     }
     @Then("the product is added to the wishlist")
     public void theProductIsAddedToTheWishlist() {
 
     }
-
-
-
 
     @After
     public void tearDown(){
