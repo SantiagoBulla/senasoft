@@ -67,9 +67,18 @@ public class LoginStepDefinition {
     @Then("he should be redirected to the main page")
     public void heShouldBeRedirectedToTheMainPage() {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(LoginValidator.isAddressVisible(),
-                Matchers.is("MI SALDO")));
-        hisBrowser.quit();
+                Matchers.is("MI SALDO")));//Validacion de logueo exitoso
+        hisBrowser.quit();//matar el driver
     }
 
 
+    //Escenario de logueo fallido
+    @When("he enter an invalid credentials")
+    public void heEnterAnInvalidCredentials() {
+
+    }
+
+    @Then("he should see an error alert")
+    public void heShouldSeeAnErrorAlert() {
+    }
 }

@@ -8,7 +8,7 @@ import userinterfaces.AccountPage;
 
 public class LoginValidator implements Question {
 
-
+    //retornar el elemento con el cual se pretende hacer la validacion
     @Override
     public String answeredBy(Actor actor) {
         return Text.of(AccountPage.TXT_ADDRESS).viewedBy(actor).asString();
