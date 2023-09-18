@@ -9,12 +9,12 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Scroll;
 import userinterfaces.LoginPage;
 
-public class Register implements Task {
+public class RegisterTask implements Task {
 
    RegisterModel credentials;
 
 
-    public Register(RegisterModel credentials) {
+    public RegisterTask(RegisterModel credentials) {
         this.credentials = credentials;
     }
 
@@ -35,7 +35,7 @@ public class Register implements Task {
 
     }
 
-    public static Register Enter(RegisterModel credentials){
-        return Tasks.instrumented(Register.class,credentials);
+    public static RegisterTask Enter(RegisterModel credentials){
+        return Tasks.instrumented(RegisterTask.class,credentials);
     }
 }

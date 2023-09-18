@@ -6,7 +6,6 @@ import io.cucumber.java.DataTableType;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import models.LoginModel;
 import models.RegisterModel;
 import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
@@ -16,10 +15,9 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
-import questions.LoginInvalid;
 import questions.LoginValidator;
 import questions.RegisterInvalid;
-import taks.Register;
+import taks.RegisterTask;
 
 import java.util.List;
 import java.util.Map;
@@ -54,7 +52,7 @@ public class RegisterStepDefinitions {
     public void theUserEnterTheCredentials(List<RegisterModel> credentialsList) {
         RegisterModel credentials;
         credentials = credentialsList.get(0);
-        OnStage.theActorInTheSpotlight().attemptsTo(Register.Enter(credentials));
+        OnStage.theActorInTheSpotlight().attemptsTo(RegisterTask.Enter(credentials));
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
@@ -76,7 +74,7 @@ public class RegisterStepDefinitions {
     public void theUserEntersTheFailedCredentials(List<RegisterModel> credentialsList) {
         RegisterModel credentials;
         credentials = credentialsList.get(0);
-        OnStage.theActorInTheSpotlight().attemptsTo(Register.Enter(credentials));
+        OnStage.theActorInTheSpotlight().attemptsTo(RegisterTask.Enter(credentials));
     }
 
     @Then("the user should see an error message")
