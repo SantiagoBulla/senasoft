@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Accessories module" skipped="1" tests="1" time="69.72" timestamp="2023-09-18 02:34:11"><testcase name="add wallet into wishlist"><skipped/></testcase></testsuite>
+=======
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Accessories module" skipped="1" tests="1" time="83.39" timestamp="2023-09-18 11:00:37"><testcase name="add wallet into wishlist"><skipped/></testcase></testsuite>
+>>>>>>> 98277359dd75d2bcef7d1917a4524beda1fe499f
