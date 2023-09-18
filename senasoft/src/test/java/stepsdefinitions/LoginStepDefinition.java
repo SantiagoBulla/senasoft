@@ -6,13 +6,16 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import models.LoginModel;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
+import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
+import questions.LoginValidator;
 import taks.LoginTask;
 import userinterfaces.MenuComponent;
 
@@ -59,12 +62,13 @@ public class LoginStepDefinition {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        hisBrowser.quit();//matar el driver
     }
 
     @Then("he should be redirected to the main page")
     public void heShouldBeRedirectedToTheMainPage() {
-
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(LoginValidator.isAddressVisible(),
+                Matchers.is("MI SALDO")));
+        hisBrowser.quit();
     }
 
 

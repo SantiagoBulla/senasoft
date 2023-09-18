@@ -12,4 +12,3 @@ Feature: Login
     Examples:
       | document   | password       |
       | 1111111111 | contraseña1234 |
-      | 1234567890 | admin123       |
