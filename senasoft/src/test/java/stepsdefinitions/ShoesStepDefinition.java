@@ -25,28 +25,27 @@ public class ShoesStepDefinition {
 
     @Given("that the user is on the shoes section")
     public void thatTheUserIsOnTheShoesSection() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
     }
+
     @When("the user clicks on heart button into a product card")
     public void theUserClicksOnHeartButtonIntoAProductCard() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
     }
+
     @And("the user clicks on user component to go to the account section")
     public void theUserClicksOnUserComponentToGoToTheAccountSection() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
     }
+
     @And("the user clicks on the wish list option")
     public void theUserClicksOnTheWishListOption() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
     }
+
     @Then("he should see the product added on the wish list")
     public void heShouldSeeTheProductAddedOnTheWishList() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
     }
 
 }
