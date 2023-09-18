@@ -15,6 +15,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
+import questions.LoginInvalid;
 import questions.LoginValidator;
 import taks.LoginTask;
 import userinterfaces.MenuComponent;
@@ -42,8 +43,7 @@ public class LoginStepDefinition {
     @DataTableType
     public LoginModel userData(Map<String, String> value) {//metodo de configuracion para trabajar con data tables
         return new LoginModel(//constructor del modelo
-                value.get("document"),
-                value.get("password"));
+                value.get("document"), value.get("password"));
     }
 
     @Given("that the user is the login page")
@@ -52,8 +52,8 @@ public class LoginStepDefinition {
         OnStage.theActorInTheSpotlight().wasAbleTo(Click.on(MenuComponent.ACCOUNT_ICON));
     }
 
-    @When("he enter the correct credentials")
-    public void heEnterTheCorrectCredentials(List<LoginModel> credentialsList) {
+    @When("he enter the credentials")
+    public void heEnterTheCredentials(List<LoginModel> credentialsList) {
         LoginModel credentials;
         credentials = credentialsList.get(0);//tomar los datos de la data table como valores para la validacion
         OnStage.theActorInTheSpotlight().attemptsTo(LoginTask.validateCredentials(credentials));//llamar metodo task
@@ -66,19 +66,15 @@ public class LoginStepDefinition {
 
     @Then("he should be redirected to the main page")
     public void heShouldBeRedirectedToTheMainPage() {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(LoginValidator.isAddressVisible(),
-                Matchers.is("MI SALDO")));//Validacion de logueo exitoso
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(LoginValidator.isAddressVisible(), Matchers.is("MI SALDO")));//Validacion de logueo exitoso
         hisBrowser.quit();//matar el driver
     }
 
 
     //Escenario de logueo fallido
-    @When("he enter an invalid credentials")
-    public void heEnterAnInvalidCredentials() {
-
-    }
-
     @Then("he should see an error alert")
     public void heShouldSeeAnErrorAlert() {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(LoginInvalid.rejectLogin(),
+                Matchers.is(true)));
     }
 }

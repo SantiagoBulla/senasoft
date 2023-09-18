@@ -2,9 +2,22 @@
 <testsuite name="runners.LoginRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LAPTOP-DASABUPE" time="0.0">
   <properties/>
   <system-out><![CDATA[
-1 Scenarios (?[32m1 passed?[0m)
-3 Steps (?[32m3 passed?[0m)
-0m18,951s
+?[31mFailed scenarios:?[0m
+file:///C:/Users/57305/Documents/Automatizacion%20de%20pruebas/senasoft/senasoft/src/test/resources/features/login.feature:26 # User attempts to login with invalid credentials
+
+2 Scenarios (?[31m1 failed?[0m, ?[32m1 passed?[0m)
+6 Steps (?[31m1 failed?[0m, ?[32m5 passed?[0m)
+0m55,005s
+
+
+java.lang.AssertionError: 
+Expected: is <false>
+     but: was <true>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:322)
+	at stepsdefinitions.LoginStepDefinition.heShouldSeeAnErrorAlert(LoginStepDefinition.java:77)
+	at ?.he should see an error alert(file:///C:/Users/57305/Documents/Automatizacion%20de%20pruebas/senasoft/senasoft/src/test/resources/features/login.feature:22)
 
 
 ]]></system-out>
@@ -26,8 +39,10 @@
 -------------------------------------------------------------------------------------
 
 [Test worker] INFO  - Test Suite Started: Login
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@4641f66c: Generating report for test outcome: Login:Successful Login
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@7e76a66f: Generating report for test outcome: Login:Successful Login
+[pool-1-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@6abd8bcd: Generating report for test outcome: Login:User attempts to login with invalid credentials
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@6abd8bcd: Generating report for test outcome: Login:Successful Login
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@21ce2e4d: Generating report for test outcome: Login:Successful Login
+[pool-2-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@21ce2e4d: Generating report for test outcome: Login:User attempts to login with invalid credentials
 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/57305/Documents/Automatizacion%20de%20pruebas/senasoft/senasoft/src/test/resources/features/login.feature
 ]]></system-err>
 </testsuite>
