@@ -1,32 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Accessories module" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-18T18:19:00" hostname="DESKTOP-0AB3449" time="42.901">
+<testsuite name="Accessories module" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-18T19:34:10" hostname="DESKTOP-0AB3449" time="70.595">
   <properties/>
-  <testcase name="add wallet into wishlist" classname="Accessories module" time="42.901">
-    <failure message="io.cucumber.junit.UndefinedStepException: The step 'the user is the Accessories page' and 5 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;the user is the Accessories page&quot;)&#10;public void theUserIsTheAccessoriesPage() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user clicks on waller option&quot;)&#10;public void theUserClicksOnWallerOption() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user see the result of their search&quot;)&#10;public void theUserSeeTheResultOfTheirSearch() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user clicks the favorite option&quot;)&#10;public void theUserClicksTheFavoriteOption() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user clicks on añadir a la lista de deseos&quot;)&#10;public void theUserClicksOnAñadirALaListaDeDeseos() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the product is added to the wishlist&quot;)&#10;public void theProductIsAddedToTheWishlist() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'the user is the Accessories page' and 5 other step(s) are undefined.
+  <testcase name="add wallet into wishlist" classname="Accessories module" time="70.595">
+    <failure message="io.cucumber.junit.UndefinedStepException: The step 'the user Clicks on wallet option and Sees the result of their search' and 2 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@When(&quot;the user Clicks on wallet option and Sees the result of their search&quot;)&#10;public void theUserClicksOnWalletOptionAndSeesTheResultOfTheirSearch() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;Clicks the favorite option and clicks on {string}&quot;)&#10;public void clicksTheFavoriteOptionAndClicksOn(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the product is added to the wishlist&quot;)&#10;public void theProductIsAddedToTheWishlist() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'the user Clicks on wallet option and Sees the result of their search' and 2 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
 
-@Given(&quot;the user is the Accessories page&quot;)
-public void theUserIsTheAccessoriesPage() {
+@When(&quot;the user Clicks on wallet option and Sees the result of their search&quot;)
+public void theUserClicksOnWalletOptionAndSeesTheResultOfTheirSearch() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;the user clicks on waller option&quot;)
-public void theUserClicksOnWallerOption() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;the user see the result of their search&quot;)
-public void theUserSeeTheResultOfTheirSearch() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;the user clicks the favorite option&quot;)
-public void theUserClicksTheFavoriteOption() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;the user clicks on añadir a la lista de deseos&quot;)
-public void theUserClicksOnAñadirALaListaDeDeseos() {
+@When(&quot;Clicks the favorite option and clicks on {string}&quot;)
+public void clicksTheFavoriteOptionAndClicksOn(String string) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
@@ -54,11 +39,11 @@ add wallet into wishlist(accessories-module;add-wallet-into-wishlist)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 31722
+Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 31510
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sep. 18, 2023 1:19:11 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+sep. 18, 2023 2:34:20 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 

@@ -9,7 +9,7 @@ import userinterfaces.SubMenuComponent;
 public class AddWishlistSuccessfull implements Question<String> {
     @Override
     public String answeredBy(Actor actor) {
-        return Text.of(SubMenuComponent.BTN_ADD_WISHLIST).viewedBy(actor).asString();
+        return Text.of(AccessoriesPage.BTN_ADD_WISHLIST).viewedBy(actor).asString();
     }
 
     public static AddWishlistSuccessfull confirm (){

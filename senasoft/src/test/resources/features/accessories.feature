@@ -9,11 +9,8 @@ Feature: Accessories module
 
   Scenario: add wallet into wishlist
     Given the user is the Accessories page
-    When the user performs the following actions:
-    - Clicks on wallet option
-    - Sees the result of their search
-    - Clicks the favorite option
-    - Clicks on "añadir a la lista de deseos"
+    When the user Clicks on wallet option and Sees the result of their search
+    And Clicks the favorite option and clicks on añadir a la lista de deseos
 
 
     Then the product is added to the wishlist

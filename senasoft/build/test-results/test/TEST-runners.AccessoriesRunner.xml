@@ -6,38 +6,20 @@
 file:///C:/Users/User/Documents/senasoft/senasoft/src/test/resources/features/accessories.feature:10 # add wallet into wishlist
 
 1 Scenarios (?[33m1 undefined?[0m)
-9 Steps (?[36m5 skipped?[0m, ?[33m1 undefined?[0m, ?[32m3 passed?[0m)
-0m43.383s
+7 Steps (?[36m2 skipped?[0m, ?[33m1 undefined?[0m, ?[32m4 passed?[0m)
+1m11.067s
 
 
 You can implement missing steps with the snippets below:
 
-@Given("the user is the Accessories page")
-public void theUserIsTheAccessoriesPage() {
+@When("the user Clicks on wallet option and Sees the result of their search")
+public void theUserClicksOnWalletOptionAndSeesTheResultOfTheirSearch() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
 
-@When("the user clicks on waller option")
-public void theUserClicksOnWallerOption() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-@When("the user see the result of their search")
-public void theUserSeeTheResultOfTheirSearch() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-@When("the user clicks the favorite option")
-public void theUserClicksTheFavoriteOption() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-@When("the user clicks on añadir a la lista de deseos")
-public void theUserClicksOnAñadirALaListaDeDeseos() {
+@When("Clicks the favorite option and clicks on {string}")
+public void clicksTheFavoriteOptionAndClicksOn(String string) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
