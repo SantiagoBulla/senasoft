@@ -1,8 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Login" skipped="0" tests="2" time="54.17" timestamp="2023-09-18 08:53:59"><testcase name="Successful Login"/><testcase name="User attempts to login with invalid credentials"><failure message="&#13;&#10;Expected: is &lt;false&gt;&#13;&#10;     but: was &lt;true&gt;" type="java.lang.AssertionError">&#13;
-Expected: is &lt;false&gt;&#13;
-     but: was &lt;true&gt;</failure><system-err>&#13;
-Expected: is &lt;false&gt;&#13;
-     but: was &lt;true&gt;&#13;
-stepsdefinitions.LoginStepDefinition.heShouldSeeAnErrorAlert(LoginStepDefinition.java:77)&#13;
-✽.he should see an error alert(file:///C:/Users/57305/Documents/Automatizacion%20de%20pruebas/senasoft/senasoft/src/test/resources/features/login.feature:22)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Login" skipped="0" tests="2" time="112.17" timestamp="2023-09-18 10:26:52"><testcase name="Successful Login"/><testcase name="User attempts to login with invalid credentials"/></testsuite>
