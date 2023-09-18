@@ -10,6 +10,7 @@ import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+import taks.ClickOnUserIconTask;
 import taks.GoToShoesSectionTask;
 
 public class ShoesStepDefinition {
@@ -34,14 +35,10 @@ public class ShoesStepDefinition {
 
     }
 
-    @And("the user clicks on user component to go to the account section")
-    public void theUserClicksOnUserComponentToGoToTheAccountSection() {
 
-    }
-
-    @And("the user clicks on the wish list option")
-    public void theUserClicksOnTheWishListOption() {
-
+    @And("the user go to wish list section")
+    public void theUserGoToWishListSection() {
+        OnStage.theActorInTheSpotlight().attemptsTo(ClickOnUserIconTask.clickuserIcon());
     }
 
     @Then("he should see the product added on the wish list")

@@ -17,6 +17,7 @@ import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
 import questions.LoginInvalid;
 import questions.LoginValidator;
+import taks.ClickOnUserIconTask;
 import taks.LoginTask;
 import userinterfaces.MenuComponent;
 
@@ -49,7 +50,7 @@ public class LoginStepDefinition {
     @Given("that the user is the login page")
     public void thatTheUserIsTheLoginPage() {
         OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.bon-bonite.com/"));
-        OnStage.theActorInTheSpotlight().wasAbleTo(Click.on(MenuComponent.ACCOUNT_ICON));
+        OnStage.theActorInTheSpotlight().attemptsTo(ClickOnUserIconTask.clickuserIcon());
     }
 
     @When("he enter the credentials")
