@@ -7,19 +7,13 @@ file:///C:/Users/User/Documents/senasoft/senasoft/src/test/resources/features/ac
 
 1 Scenarios (?[33m1 undefined?[0m)
 9 Steps (?[36m5 skipped?[0m, ?[33m1 undefined?[0m, ?[32m3 passed?[0m)
-0m38.428s
+0m52.966s
 
 
 You can implement missing steps with the snippets below:
 
-@Given("the user is the index page")
-public void theUserIsTheIndexPage() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-@When("the user clicks on Accesories option")
-public void theUserClicksOnAccesoriesOption() {
+@Given("the user is the Accessories page")
+public void theUserIsTheAccessoriesPage() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
@@ -48,6 +42,12 @@ public void theUserClicksOnAñadirALaListaDeDeseos() {
     throw new io.cucumber.java.PendingException();
 }
 
+@Then("the product is added to the wishlist")
+public void theProductIsAddedToTheWishlist() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/User/Documents/senasoft/senasoft/src/test/resources/features/accessories.feature
@@ -68,8 +68,8 @@ public void theUserClicksOnAñadirALaListaDeDeseos() {
 -------------------------------------------------------------------------------------
 
 [Test worker] INFO  - Test Suite Started: Accessories module
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@f36f34d: Generating report for test outcome: Accessories module:add wallet into wishlist
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@521c67f0: Generating report for test outcome: Accessories module:add wallet into wishlist
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@7be62956: Generating report for test outcome: Accessories module:add wallet into wishlist
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@65d6640: Generating report for test outcome: Accessories module:add wallet into wishlist
 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/User/Documents/senasoft/senasoft/src/test/resources/features/accessories.feature
 ]]></system-err>
 </testsuite>

@@ -1,5 +1,6 @@
 package stepsdefinitions;
 
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.DataTableType;
 import io.cucumber.java.en.Given;
@@ -85,5 +86,9 @@ public class RegisterStepDefinitions {
         hisBrowser.quit();
     }
 
+    @After
+    public void tearDown(){
+        hisBrowser.quit();
+    }
 
 }

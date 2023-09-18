@@ -1,5 +1,6 @@
 package stepsdefinitions;
 
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.DataTableType;
 import io.cucumber.java.en.Given;
@@ -67,7 +68,6 @@ public class LoginStepDefinition {
     @Then("he should be redirected to the main page")
     public void heShouldBeRedirectedToTheMainPage() {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(LoginValidator.isAddressVisible(), Matchers.is("MI SALDO")));//Validacion de logueo exitoso
-        hisBrowser.quit();//matar el driver
     }
 
 
@@ -76,5 +76,10 @@ public class LoginStepDefinition {
     public void heShouldSeeAnErrorAlert() {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(LoginInvalid.rejectLogin(),
                 Matchers.is(true)));
+    }
+
+    @After
+    public void tearDown(){
+        hisBrowser.quit();
     }
 }
