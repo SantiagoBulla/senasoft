@@ -3,47 +3,41 @@
   <properties/>
   <system-out><![CDATA[
 ?[33mUndefined scenarios:?[0m
-file:///C:/Users/57305/Documents/Automatizacion%20de%20pruebas/senasoft/senasoft/src/test/resources/features/shoes.feature:10 # add wallet into wishlist
+file:///C:/Users/57305/Documents/Automatizacion%20de%20pruebas/senasoft/senasoft/src/test/resources/features/shoes.feature:10 # add shoes into wishlist
 
 1 Scenarios (?[33m1 undefined?[0m)
-9 Steps (?[36m5 skipped?[0m, ?[33m1 undefined?[0m, ?[32m3 passed?[0m)
-1m48,419s
+8 Steps (?[36m4 skipped?[0m, ?[33m1 undefined?[0m, ?[32m3 passed?[0m)
+1m47,552s
 
 
 You can implement missing steps with the snippets below:
 
-@Given("the user is the index page")
-public void theUserIsTheIndexPage() {
+@Given("that the user is on the shoes section")
+public void thatTheUserIsOnTheShoesSection() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
 
-@When("the user clicks on Accesories option")
-public void theUserClicksOnAccesoriesOption() {
+@When("the user clicks on heart button into a product card")
+public void theUserClicksOnHeartButtonIntoAProductCard() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
 
-@When("the user clicks on waller option")
-public void theUserClicksOnWallerOption() {
+@When("the user clicks on user component to go to the account section")
+public void theUserClicksOnUserComponentToGoToTheAccountSection() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
 
-@When("the user see the result of their search")
-public void theUserSeeTheResultOfTheirSearch() {
+@When("the user clicks on the wish list option")
+public void theUserClicksOnTheWishListOption() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
 
-@When("the user clicks the favorite option")
-public void theUserClicksTheFavoriteOption() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-@When("the user clicks on añadir a la lista de deseos")
-public void theUserClicksOnAñadirALaListaDeDeseos() {
+@Then("he should see the product added on the wish list")
+public void heShouldSeeTheProductAddedOnTheWishList() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
@@ -68,8 +62,8 @@ public void theUserClicksOnAñadirALaListaDeDeseos() {
 -------------------------------------------------------------------------------------
 
 [Test worker] INFO  - Test Suite Started: Shoes module
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@783dc0e7: Generating report for test outcome: Shoes module:add wallet into wishlist
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@670c171c: Generating report for test outcome: Shoes module:add wallet into wishlist
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@7507d96c: Generating report for test outcome: Shoes module:add shoes into wishlist
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@49f50c8f: Generating report for test outcome: Shoes module:add shoes into wishlist
 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/57305/Documents/Automatizacion%20de%20pruebas/senasoft/senasoft/src/test/resources/features/shoes.feature
 ]]></system-err>
 </testsuite>

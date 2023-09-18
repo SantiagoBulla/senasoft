@@ -1,37 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Shoes module" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-18T16:06:28" hostname="LAPTOP-DASABUPE" time="108.125">
+<testsuite name="Shoes module" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-09-18T16:23:15" hostname="LAPTOP-DASABUPE" time="107.329">
   <properties/>
-  <testcase name="add wallet into wishlist" classname="Shoes module" time="108.125">
-    <failure message="io.cucumber.junit.UndefinedStepException: The step 'the user is the index page' and 5 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;the user is the index page&quot;)&#10;public void theUserIsTheIndexPage() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user clicks on Accesories option&quot;)&#10;public void theUserClicksOnAccesoriesOption() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user clicks on waller option&quot;)&#10;public void theUserClicksOnWallerOption() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user see the result of their search&quot;)&#10;public void theUserSeeTheResultOfTheirSearch() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user clicks the favorite option&quot;)&#10;public void theUserClicksTheFavoriteOption() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user clicks on añadir a la lista de deseos&quot;)&#10;public void theUserClicksOnAñadirALaListaDeDeseos() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'the user is the index page' and 5 other step(s) are undefined.
+  <testcase name="add shoes into wishlist" classname="Shoes module" time="107.329">
+    <failure message="io.cucumber.junit.UndefinedStepException: The step 'that the user is on the shoes section' and 4 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;that the user is on the shoes section&quot;)&#10;public void thatTheUserIsOnTheShoesSection() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user clicks on heart button into a product card&quot;)&#10;public void theUserClicksOnHeartButtonIntoAProductCard() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user clicks on user component to go to the account section&quot;)&#10;public void theUserClicksOnUserComponentToGoToTheAccountSection() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user clicks on the wish list option&quot;)&#10;public void theUserClicksOnTheWishListOption() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;he should see the product added on the wish list&quot;)&#10;public void heShouldSeeTheProductAddedOnTheWishList() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'that the user is on the shoes section' and 4 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
 
-@Given(&quot;the user is the index page&quot;)
-public void theUserIsTheIndexPage() {
+@Given(&quot;that the user is on the shoes section&quot;)
+public void thatTheUserIsOnTheShoesSection() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;the user clicks on Accesories option&quot;)
-public void theUserClicksOnAccesoriesOption() {
+@When(&quot;the user clicks on heart button into a product card&quot;)
+public void theUserClicksOnHeartButtonIntoAProductCard() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;the user clicks on waller option&quot;)
-public void theUserClicksOnWallerOption() {
+@When(&quot;the user clicks on user component to go to the account section&quot;)
+public void theUserClicksOnUserComponentToGoToTheAccountSection() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;the user see the result of their search&quot;)
-public void theUserSeeTheResultOfTheirSearch() {
+@When(&quot;the user clicks on the wish list option&quot;)
+public void theUserClicksOnTheWishListOption() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;the user clicks the favorite option&quot;)
-public void theUserClicksTheFavoriteOption() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;the user clicks on añadir a la lista de deseos&quot;)
-public void theUserClicksOnAñadirALaListaDeDeseos() {
+@Then(&quot;he should see the product added on the wish list&quot;)
+public void heShouldSeeTheProductAddedOnTheWishList() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
@@ -46,7 +41,7 @@ public void theUserClicksOnAñadirALaListaDeDeseos() {
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-add wallet into wishlist(shoes-module;add-wallet-into-wishlist)
+add shoes into wishlist(shoes-module;add-shoes-into-wishlist)
 --------------------------------------------------------------------------------
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
 [Test worker] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_116
@@ -54,11 +49,11 @@ add wallet into wishlist(shoes-module;add-wallet-into-wishlist)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\57305\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 20075
+Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 55781
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sep. 18, 2023 11:06:50 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+sep. 18, 2023 11:23:22 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
@@ -66,7 +61,7 @@ INFORMACIÓN: Detected dialect: W3C
    | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
    |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
 
-add wallet into wishlist
+add shoes into wishlist
 -----------------------------------------------------------------------------
 ]]></system-err>
 </testsuite>

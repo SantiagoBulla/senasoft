@@ -5,7 +5,7 @@ import io.cucumber.java.DataTableType;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import models.LoginModel;
+
 import models.RegisterModel;
 import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
@@ -15,7 +15,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
-import questions.LoginInvalid;
+
 import questions.LoginValidator;
 import questions.RegisterInvalid;
 import taks.Register;
