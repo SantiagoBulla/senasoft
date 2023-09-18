@@ -17,7 +17,7 @@ public class RegisterPage {
 
     public static final Target CHECK_BOX = Target
             .the("click on check box")
-            .locatedBy("//*[@id=\"newsletter_authorization\"]");
+            .locatedBy("//input[@id='privacy_policy_reg']");
 
     public static final Target BTN_REGISTER = Target
             .the("click on button register")

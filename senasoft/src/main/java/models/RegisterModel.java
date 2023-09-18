@@ -1,25 +1,30 @@
 package models;
 
 public class RegisterModel {
-    private String name;
-    private String emailAddres;
+    private String document;
+    private String email;
     private String password;
 
-
-    public String getName() {
-        return name;
+    public RegisterModel(String document, String email, String password) {
+        this.document = document;
+        this.email = email;
+        this.password = password;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getDocument() {
+        return document;
     }
 
-    public String getEmailAddres() {
-        return emailAddres;
+    public void setDocument(String document) {
+        this.document = document;
     }
 
-    public void setEmailAddres(String emailAddres) {
-        this.emailAddres = emailAddres;
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPassword() {

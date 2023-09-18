@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD:senasoft/build/test-results/test/TEST-Sign#20in.xml
-<testsuite name="Sign in" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-16T02:11:43" hostname="DESKTOP-0AB3449" time="44.468">
+<testsuite name="Sign in" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-09-18T13:54:18" hostname="DESKTOP-0AB3449" time="69.049">
   <properties/>
-  <testcase name="register Sucessfull" classname="Sign in" time="44.468"/>
-=======
-<testsuite name="Login" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-18T02:12:16" hostname="LAPTOP-DASABUPE" time="18.745">
-  <properties/>
-  <testcase name="Successful Login" classname="Login" time="18.745"/>
->>>>>>> 3578aee6cd61c8caae78fd42ca329b50e1f3af7a:senasoft/build/test-results/test/TEST-Login.xml
+  <testcase name="register Sucessfull" classname="Sign in" time="37.449"/>
+  <testcase name="register Failed" classname="Sign in" time="31.6"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/User/Documents/senasoft/senasoft/src/test/resources/features/register.feature
 [Test worker] INFO  - 
@@ -23,21 +18,12 @@ register Sucessfull(sign-in;register-sucessfull)
 [Test worker] WARN io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_116 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_116)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-<<<<<<< HEAD:senasoft/build/test-results/test/TEST-Sign#20in.xml
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 10165
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-sep. 15, 2023 9:11:55 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-=======
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 38542
+Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 19905
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-sep. 17, 2023 9:12:20 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
->>>>>>> 3578aee6cd61c8caae78fd42ca329b50e1f3af7a:senasoft/build/test-results/test/TEST-Login.xml
+sep. 18, 2023 8:54:27 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -46,6 +32,35 @@ INFORMACIÓN: Detected dialect: W3C
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
 register Sucessfull
+----------------------------------------------------------------------
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/User/Documents/senasoft/senasoft/src/test/resources/features/register.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+register Failed(sign-in;register-failed)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_116
+[Test worker] WARN io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_116 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_116)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 10487
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+sep. 18, 2023 8:55:04 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+register Failed
 ----------------------------------------------------------------------
 ]]></system-err>
 </testsuite>
