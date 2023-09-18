@@ -7,12 +7,17 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import models.LoginModel;
 import models.RegisterModel;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
+import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
+import questions.LoginInvalid;
+import questions.LoginValidator;
+import questions.RegisterInvalid;
 import taks.Register;
 
 import java.util.List;
@@ -59,7 +64,9 @@ public class RegisterStepDefinitions {
     // Asercion
     @Then("the user should be redirect to the main page")
     public void theUserShouldBeRedirectToTheMainPage() {
-
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(LoginValidator.isAddressVisible()
+        , Matchers.is("MI SALDO")));
+        hisBrowser.quit();
     }
 
     // register Failed
@@ -73,7 +80,9 @@ public class RegisterStepDefinitions {
 
     @Then("the user should see an error message")
     public void theUserShouldSeeAnErrorMessage() {
-
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(RegisterInvalid.registerInvalid()
+        , Matchers.is("Autorizo el tratamiento de mis datos personales *")));
+        hisBrowser.quit();
     }
 
 

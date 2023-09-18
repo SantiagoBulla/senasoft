@@ -11,8 +11,8 @@ Feature: Sign in
     Then the user should be redirect to the main page
 
     Examples:
-      | document   | email                       | password  |
-      | 1021396262 | juandsalinasnacun@gmail.com | Em@ji2018 |
+      | document   | email                   | password                |
+      | 1987634623 | juandispera32@gmail.com | panconsalchiyqueso1233@ |
 
 
   Scenario Outline: register Failed
@@ -23,5 +23,5 @@ Feature: Sign in
     Then the user should see an error message
 
     Examples:
-      | document | email                  | password         |
-      | qqqq     | paneconqueso@gmail.com | 1234pan5643queso |
+      | document | email                  | password |
+      | qqqq     | paneconqueso@gmail.com | 1234     |

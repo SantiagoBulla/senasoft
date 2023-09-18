@@ -7,7 +7,7 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Scroll;
-import userinterfaces.RegisterPage;
+import userinterfaces.LoginPage;
 
 public class Register implements Task {
 
@@ -20,18 +20,19 @@ public class Register implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Enter.theValue(credentials.getDocument()).into(RegisterPage.TBL_USERNAME));
-        actor.attemptsTo(Enter.theValue(credentials.getEmail()).into(RegisterPage.LBL_EMAIL));
-        actor.attemptsTo(Scroll.to(RegisterPage.TBL_USERNAME));
-        actor.attemptsTo(Enter.theValue(credentials.getPassword()).into(RegisterPage.LBL_PASSWORD));
-        actor.attemptsTo(Scroll.to(RegisterPage.LBL_PASSWORD));
-        actor.attemptsTo(Click.on(RegisterPage.CHECK_BOX));
-        actor.attemptsTo(Click.on(RegisterPage.BTN_REGISTER));
+        actor.attemptsTo(Enter.theValue(credentials.getDocument()).into(LoginPage.TXT_REGISTER_USERNAME));
+        actor.attemptsTo(Enter.theValue(credentials.getEmail()).into(LoginPage.TXT_REGISTER_EMAIL));
+        actor.attemptsTo(Scroll.to(LoginPage.TXT_REGISTER_EMAIL));
+        actor.attemptsTo(Enter.theValue(credentials.getPassword()).into(LoginPage.TXT_REGISTER_PASSWORD_2));
+        actor.attemptsTo(Scroll.to(LoginPage.TXT_REGISTER_PASSWORD_2));
+        actor.attemptsTo(Click.on(LoginPage.CHECK_BOX));
+        actor.attemptsTo(Click.on(LoginPage.BTN_REGISTER));
         try {
             Thread.sleep(4000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
     }
 
     public static Register Enter(RegisterModel credentials){
