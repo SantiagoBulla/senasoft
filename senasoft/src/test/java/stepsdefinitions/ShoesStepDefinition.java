@@ -10,6 +10,7 @@ import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+import taks.GoToShoesSectionTask;
 
 public class ShoesStepDefinition {
 
@@ -17,7 +18,7 @@ public class ShoesStepDefinition {
     WebDriver hisBrowser;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         OnStage.setTheStage(Cast.ofStandardActors());
         OnStage.theActorCalled("User");
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisBrowser));
@@ -25,7 +26,7 @@ public class ShoesStepDefinition {
 
     @Given("that the user is on the shoes section")
     public void thatTheUserIsOnTheShoesSection() {
-
+        OnStage.theActorInTheSpotlight().wasAbleTo(GoToShoesSectionTask.goToSection());
     }
 
     @When("the user clicks on heart button into a product card")

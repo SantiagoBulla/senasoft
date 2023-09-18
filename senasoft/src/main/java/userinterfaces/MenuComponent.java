@@ -7,5 +7,5 @@ public class MenuComponent {
             .locatedBy("//div[@class='myaccount']");
 
     public static final Target SHOES_LINK = Target.the("link element to access the shoes section")
-            .locatedBy("//div/ul/li[@id='menu-item-10']");
+            .locatedBy("//div//ul//li[@id='menu-item-10']");
 }

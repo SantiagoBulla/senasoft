@@ -8,17 +8,20 @@ import net.serenitybdd.screenplay.targets.Target;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-@AllArgsConstructor
 public class ClickOnComponentElementInteraction implements Interaction {
 
-    private final Target localor;
+    private final Target LOCATOR;
 
-    public static ClickOnComponentElementInteraction componentClick(Target locator){
-        return instrumented(ClickOnComponentElementInteraction.class,locator);
+    public ClickOnComponentElementInteraction(Target locator) {
+        LOCATOR = locator;
+    }
+
+    public static ClickOnComponentElementInteraction componentClick(Target LOCATOR){
+        return instrumented(ClickOnComponentElementInteraction.class,LOCATOR);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Click.on(localor));
+        actor.attemptsTo(Click.on(LOCATOR));
     }
 }
