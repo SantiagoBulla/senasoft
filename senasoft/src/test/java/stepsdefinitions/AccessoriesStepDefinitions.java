@@ -26,6 +26,39 @@ public class AccessoriesStepDefinitions{
     }
 
 
+    @Given("the user is the Accessories page")
+    public void theUserIsTheAccessoriesPage() {
+        OnStage.theActorInTheSpotlight().wasAbleTo();
+    }
+
+    @When("the user clicks on waller option")
+    public void theUserClicksOnWallerOption() {
+
+    }
+
+    @When("the user see the result of their search")
+    public void theUserSeeTheResultOfTheirSearch() {
+
+    }
+
+    @When("the user clicks the favorite option")
+    public void theUserClicksTheFavoriteOption() {
+
+    }
+
+    @When("the user clicks on añadir a la lista de deseos")
+    public void theUserClicksOnAñadirALaListaDeDeseos() {
+    }
+
+    @Then("the product is added to the wishlist")
+    public void theProductIsAddedToTheWishlist() {
+
+    }
+
+
+
+
+
 
     @After
     public void tearDown(){
