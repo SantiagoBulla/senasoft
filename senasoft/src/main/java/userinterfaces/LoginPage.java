@@ -14,4 +14,8 @@ public class LoginPage {
     //Register locators
     public static final Target TXT_REGISTER_PASSWORD = Target.the("Campo para ingreso de la contraseña en el registro")
             .locatedBy("//input[@id='reg_email']");
+
+    //
+    public static final Target TXT_ERROR_LOGIN = Target.the("Alerta de error al validar el logueo exitoso")
+            .locatedBy("//div/ul[@class='woocommerce-error']");
 }

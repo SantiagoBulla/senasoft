@@ -4,7 +4,7 @@ Feature: Login
 
   Scenario Outline: Successful Login
     Given that the user is the login page
-    When he enter the correct credentials
+    When he enter the credentials
       | document   | password   |
       | <document> | <password> |
     Then he should be redirected to the main page
@@ -16,7 +16,7 @@ Feature: Login
 
   Scenario Outline: User attempts to login with invalid credentials
     Given that the user is the login page
-    When he enter an invalid credentials
+    When he enter the credentials
       | document   | password   |
       | <document> | <password> |
     Then he should see an error alert
